@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário HTML - Gean Pereira</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .dict-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+        
+        .dict-tag {
+            font-weight: bold;
+            color: #2563eb;
+            font-family: monospace;
+            font-size: 18px;
+        }
+        
+        .dict-description {
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+        
+        .dict-example {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f4ff;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <h1>Dicionário de Elementos HTML</h1>
+            <nav>
+                <div class="header-info">
+                    <div class="header-item">
+                        <a href="index.html">Voltar para Página Inicial</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="conteudo" style="grid-template-columns: 1fr;">
+            <main>
+                <section>
+                    <h2>TAGS HTML UTILIZADAS</h2>
+                    <p>Este dicionário contém as principais tags HTML utilizadas na construção das páginas deste site.</p>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;!DOCTYPE html&gt;</div>
+                        <div class="dict-description">Define o tipo de documento como HTML5. É a primeira linha em um documento HTML.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;html&gt;</div>
+                        <div class="dict-description">É o elemento raiz de uma página HTML. Todos os outros elementos devem ser descendentes deste elemento.</div>
+                        <div class="dict-example">&lt;html lang="pt-br"&gt;...&lt;/html&gt;</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;head&gt;</div>
+                        <div class="dict-description">Contém metadados/informações para o documento, como título, links para CSS, meta tags, etc.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;meta&gt;</div>
+                        <div class="dict-description">Define metadados sobre um documento HTML, como charset, viewport, descrição, etc.</div>
+                        <div class="dict-example">&lt;meta charset="UTF-8"&gt;</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;title&gt;</div>
+                        <div class="dict-description">Define o título do documento, que aparece na aba do navegador.</div>
+                        <div class="dict-example">&lt;title&gt;Gean Pereira - Página Pessoal&lt;/title&gt;</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;link&gt;</div>
+                        <div class="dict-description">Define a relação entre o documento atual e um recurso externo, como folhas de estilo CSS ou ícones.</div>
+                        <div class="dict-example">&lt;link rel="stylesheet" href="styles.css"&gt;</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;body&gt;</div>
+                        <div class="dict-description">Contém o conteúdo visível do documento HTML.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;header&gt;</div>
+                        <div class="dict-description">Representa o cabeçalho de uma seção ou página. Geralmente contém elementos como logo, título e navegação.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;nav&gt;</div>
+                        <div class="dict-description">Define uma seção de navegação com links para outras páginas ou partes da página atual.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;main&gt;</div>
+                        <div class="dict-description">Especifica o conteúdo principal de um documento. Deve ser único no documento.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;section&gt;</div>
+                        <div class="dict-description">Define uma seção em um documento, como capítulos, cabeçalhos, rodapés ou qualquer outra seção do documento.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;aside&gt;</div>
+                        <div class="dict-description">Define um conteúdo relacionado ao conteúdo principal, mas que pode ser considerado separado dele, como uma barra lateral.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;footer&gt;</div>
+                        <div class="dict-description">Define o rodapé de uma página ou seção. Geralmente contém informações de autoria, direitos autorais, contato, etc.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;address&gt;</div>
+                        <div class="dict-description">Define informações de contato para o autor/proprietário de um documento ou artigo.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;h1&gt; a &lt;h6&gt;</div>
+                        <div class="dict-description">Define cabeçalhos HTML. &lt;h1&gt; é o mais importante e &lt;h6&gt; o menos importante.</div>
+                        <div class="dict-example">&lt;h1&gt;Bem vindo!&lt;/h1&gt;</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;p&gt;</div>
+                        <div class="dict-description">Define um parágrafo de texto.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;a&gt;</div>
+                        <div class="dict-description">Define um hiperlink, usado para vincular de uma página a outra ou a uma seção dentro da mesma página.</div>
+                        <div class="dict-example">&lt;a href="https://github.com/geanpereira" target="_blank"&gt;GitHub&lt;/a&gt;</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;img&gt;</div>
+                        <div class="dict-description">Define uma imagem no documento HTML.</div>
+                        <div class="dict-example">&lt;img src="foto.jpg" alt="Descrição da imagem"&gt;</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;div&gt;</div>
+                        <div class="dict-description">Define uma divisão ou seção em um documento HTML. É um container genérico para conteúdo de fluxo.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;span&gt;</div>
+                        <div class="dict-description">Define uma seção em um documento. É um container inline genérico para conteúdo fraseado.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;ul&gt;</div>
+                        <div class="dict-description">Define uma lista não ordenada.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;li&gt;</div>
+                        <div class="dict-description">Define um item de lista em listas ordenadas ou não ordenadas.</div>
+                    </div>
+                    
+                    <div class="dict-item">
+                        <div class="dict-tag">&lt;style&gt;</div>
+                        <div class="dict-description">Contém informações de estilo (CSS) para um documento ou parte de um documento.</div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <address>
+                <div class="contato-info">
+                    <div class="contato-item">
+                        <span class="icon">✉️</span>
+                        <a href="mailto:geanp578@gmail.com">geanp578@gmail.com</a>
+                    </div>
+                </div>
+            </address>
+            <div class="footer-links">
+                <a href="index.html">Página Inicial</a>
+            </div>
+            <p class="copyright">© 2024 Gean Pereira. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

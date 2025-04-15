@@ -1,0 +1,301 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+    color: #333;
+}
+
+.conteiner {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+  /* Cabeçalho */
+header {
+    background-color: #2563eb;
+    color: white;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contato-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contato-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.contato-item a:hover {
+    text-decoration: underline;
+}
+
+.header-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-item a:hover {
+    text-decoration: underline;
+}
+
+  /* Conteúdo principal */
+.conteudo {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .conteudo {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #2563eb;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+}
+
+  /* Educação */
+.edu-item {
+    margin-bottom: 15px;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.edu-title {
+    font-weight: 600;
+}
+
+.edu-date {
+    color: #666;
+}
+
+.edu-institution {
+    color: #555;
+}
+
+  /* Idiomas */
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.language-dots {
+    display: flex;
+    gap: 4px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2563eb;
+}
+
+.dot.empty {
+    background-color: #e0e0e0;
+}
+
+  /* Competências */
+.skills-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background-color: #f0f4ff;
+    color: #555;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+  /* Ícones */
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+  /* Estilos para a barra lateral */
+aside {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.perfil {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.perfil-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #2563eb;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+    font-size: 18px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+  /* Estilos para a lista de disciplinas */
+.disciplinas-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.disciplinas-lista li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.disciplinas-lista li:last-child {
+    border-bottom: none;
+}
+
+  /* Estilos para projetos */
+.projeto-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.projeto-item h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.projeto-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.projeto-item a:hover {
+    text-decoration: underline;
+}
+
+  /* Estilos para o rodapé */
+footer {
+    background-color: #f0f4ff;
+    padding: 20px 30px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 15px;
+}
